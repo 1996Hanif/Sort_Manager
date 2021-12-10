@@ -1,5 +1,7 @@
 package org.example.sortAlgorithms;
 
+import java.util.ArrayList;
+
 public interface SortTemplate {
-    int[] sorter (int[] listOfRandomNumbers);
+    ArrayList<Integer> sorter (ArrayList<Integer> listOfRandomNumbers);
 }

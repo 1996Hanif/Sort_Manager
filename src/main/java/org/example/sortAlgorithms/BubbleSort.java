@@ -1,19 +1,20 @@
 package org.example.sortAlgorithms;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class BubbleSort implements SortTemplate {
     @Override
-    public int[] sorter(int[] listOfRandomNumbers) {
+    public ArrayList<Integer> sorter(ArrayList<Integer> listOfRandomNumbers) {
 
         int temporaryHolder;
 
-        for (int j = 0; j < listOfRandomNumbers.length - 1; j++) {
-            for (int i = 0; i < listOfRandomNumbers.length - 1; i++) {
-                if (listOfRandomNumbers[i] > listOfRandomNumbers[i + 1]) {
-                    temporaryHolder = listOfRandomNumbers[i];
-                    listOfRandomNumbers[i] = listOfRandomNumbers[i + 1];
-                    listOfRandomNumbers[i + 1] = temporaryHolder;
+        for (int j = 0; j < listOfRandomNumbers.size() - 1; j++) {
+            for (int i = 0; i < listOfRandomNumbers.size() - 1; i++) {
+                if (listOfRandomNumbers.get(i) > listOfRandomNumbers.get(i + 1)) {
+                    temporaryHolder = listOfRandomNumbers.get(i);
+                    listOfRandomNumbers.set(i, listOfRandomNumbers.get(i + 1));
+                    listOfRandomNumbers.set(i + 1, temporaryHolder);
                 }
             }
         }
@@ -22,8 +23,14 @@ public class BubbleSort implements SortTemplate {
     }
 
     public static void main(String[] args) {
-        int[] array = {3,4,52,5,235,6,36,36};
+        ArrayList<Integer> array = new ArrayList<>();
+        array.add(132);
+        array.add(34);
+        array.add(1312);
+        array.add(32);
+        array.add(1);
+
         BubbleSort bubbleSort = new BubbleSort();
-        System.out.println(Arrays.toString(bubbleSort.sorter(array)));
+        System.out.println(bubbleSort.sorter(array));
     }
 }
