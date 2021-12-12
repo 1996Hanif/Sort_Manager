@@ -31,6 +31,7 @@ public class BinaryTree implements SortTemplate {
 
         //adds to Binary Tree
         addElements(listOfRandomNumbers);
+        //returns the binary tree in a sorted list
         getAllNodesValues(rootNode);
 
         return sortedList;
