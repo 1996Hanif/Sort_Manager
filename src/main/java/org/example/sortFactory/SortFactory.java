@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 public class SortFactory {
     public static void main(String[] args) {
-        Sorter sort = SortFactory.getSorter(1a);
+        Sorter sort = SortFactory.getSorter(1);
         System.out.println(sort.sorter(SortFactory.getRandomList(20)));
     }
     private static ArrayList<Integer> getRandomList(int amountOfValues){
