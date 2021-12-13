@@ -6,14 +6,11 @@ import org.example.sortAlgorithms.binaryTree.BinaryTree;
 import java.util.ArrayList;
 
 public class SortFactory {
-    public static void main(String[] args) {
-        Sorter sort = SortFactory.getSorter(1);
-        System.out.println(sort.sorter(SortFactory.getRandomList(20)));
-    }
-    private static ArrayList<Integer> getRandomList(int amountOfValues){
+
+    public static ArrayList<Integer> getRandomList(int amountOfValues){
         return RandomNumbersGenerator.RandomNumbersGenerator(amountOfValues);
     }
-    private static Sorter getSorter(int selectedSorterByUser){
+    public static Sorter getSorter(int selectedSorterByUser){
         if (selectedSorterByUser == 1)
             return new BinaryTree();
         else if (selectedSorterByUser == 2)
