@@ -2,7 +2,7 @@ package org.example.sortAlgorithms;
 
 import java.util.ArrayList;
 
-public class MergeSort implements SortTemplate{
+public class MergeSort implements Sorter {
     private int amountOfValues;
 
     public static void main(String[] args) {

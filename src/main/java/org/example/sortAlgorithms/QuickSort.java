@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-public class QuickSort implements SortTemplate{
+public class QuickSort implements Sorter {
 
 
     public static void main(String[] args) {

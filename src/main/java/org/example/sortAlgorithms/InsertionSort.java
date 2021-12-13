@@ -1,9 +1,8 @@
 package org.example.sortAlgorithms;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
-public class InsertionSort implements SortTemplate{
+public class InsertionSort implements Sorter {
 
     public static void main(String[] args) {
         InsertionSort insertionSort = new InsertionSort();

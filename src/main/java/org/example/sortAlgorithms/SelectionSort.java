@@ -3,7 +3,7 @@ package org.example.sortAlgorithms;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class SelectionSort implements SortTemplate{
+public class SelectionSort implements Sorter {
     public static void main(String[] args) {
         SelectionSort selectionSort = new SelectionSort();
         ArrayList<Integer> array = new ArrayList<>();

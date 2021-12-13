@@ -1,9 +1,8 @@
 package org.example.sortAlgorithms;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
-public class BubbleSort implements SortTemplate {
+public class BubbleSort implements Sorter {
     @Override
     public ArrayList<Integer> sorter(ArrayList<Integer> listOfRandomNumbers) {
 

@@ -1,11 +1,10 @@
 package org.example.sortAlgorithms.binaryTree;
 
-import org.example.sortAlgorithms.SortTemplate;
+import org.example.sortAlgorithms.Sorter;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
-public class BinaryTree implements SortTemplate {
+public class BinaryTree implements Sorter {
     private Node rootNode;
     public ArrayList<Integer> sortedList = new ArrayList<>();
 
