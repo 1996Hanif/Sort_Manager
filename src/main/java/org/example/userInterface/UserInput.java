@@ -10,15 +10,32 @@ public class UserInput {
     }
 
     public int inputMethod(){
-        int methodChosen = scanner.nextInt();
-        while (methodChosen < 0 || methodChosen > 7) {
-            System.err.print("ERROR ONLY 1 - 6:     ");
+        boolean validInput = false;
+        int methodChosen = -1;
+        while(validInput == false) {
+            //check if integer is input
+            while (!scanner.hasNextInt()) {
+                scanner.next();
+                System.err.print("ERROR NOT AN INTEGER:     ");
+            }
             methodChosen = scanner.nextInt();
+            //check if number between 1 and 6
+            if (methodChosen < 0 || methodChosen > 7) {
+                System.err.print("ERROR INPUT ONLY 1 - 6:   ");
+                validInput = false;
+            }
+            else
+                validInput = true;
         }
         return methodChosen;
 
     }
     public int inputAmountOfNumbers(){
+        //check if integer is input
+        while (!scanner.hasNextInt()) {
+            scanner.next();
+            System.err.print("ERROR NOT AN INTEGER:     ");
+        }
         int numberChosen = scanner.nextInt();
         return numberChosen;
     }
