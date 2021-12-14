@@ -8,7 +8,7 @@ public class RandomNumbersGenerator {
         ArrayList<Integer> listOfRandomNumbers = new ArrayList<>();
         Random random = new Random();
         for (int i = 0; i < amountOfValues; i++) {
-            int randomNumber = random.nextInt(1000);
+            int randomNumber = random.nextInt(Integer.MAX_VALUE);
             listOfRandomNumbers.add(randomNumber);
         }
         return listOfRandomNumbers;
