@@ -9,8 +9,8 @@ public class UserInterface {
     public static void userInterface() {
         PrintInterface printInterface = new PrintInterface();
         UserInput userInput = new UserInput();
-
         printInterface.printWelcomeInterface();
+
         String repeat = "Y";
         while(repeat.equals("Y")) {
             printInterface.printSortList();

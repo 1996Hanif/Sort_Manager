@@ -8,14 +8,12 @@ import java.util.ArrayList;
 public class SortFactory {
 
     private int method;
-    private int amount;
     private ArrayList<Integer> randomList;
     private String methodName;
     private long timeTaken;
 
     public SortFactory(int method, int amount) {
         this.method = method;
-        this.amount = amount;
         this.randomList = generateRandomList(amount);
     }
     public ArrayList<Integer> getSortedList(){
@@ -34,34 +32,21 @@ public class SortFactory {
         return RandomNumbersGenerator.RandomNumbersGenerator(amountOfValues);
     }
     private Sorter getSorter(int selectedSorterByUser){
-        if (selectedSorterByUser == 1) {
-            methodName = "Binary Tree";
-            return new BinaryTree();
-        }
-        else if (selectedSorterByUser == 2) {
-            methodName = "Bubble Sort";
-            return new BubbleSort();
-        }
-        else if (selectedSorterByUser == 3) {
-            methodName = "Insertion Sort";
-            return new InsertionSort();
-        }
-        else if (selectedSorterByUser == 4) {
-            methodName = "Merge Sort";
-            return new MergeSort();
-        }
-        else if (selectedSorterByUser == 5) {
-            methodName = "Quick Sort";
-            return new QuickSort();
-        }
-        else if (selectedSorterByUser == 6){
-            methodName = "Selection Sort";
-            return new SelectionSort();
-        }
-        else
-            return null;
+        if (selectedSorterByUser == 1) return new BinaryTree();
+        else if (selectedSorterByUser == 2) return new BubbleSort();
+        else if (selectedSorterByUser == 3) return new InsertionSort();
+        else if (selectedSorterByUser == 4) return new MergeSort();
+        else if (selectedSorterByUser == 5) return new QuickSort();
+        else if (selectedSorterByUser == 6) return new SelectionSort();
+        else return null;
     }
     public String getMethodName() {
+        if (method == 1) methodName = "Binary Tree";
+        if (method == 2) methodName = "Bubble Sort";
+        if (method == 3) methodName = "Insertion Sort";
+        if (method == 4) methodName = "Merge Sort";
+        if (method == 5) methodName = "Quick Sort";
+        if (method == 6) methodName = "Selection Sort";
         return methodName;
     }
     public long getTimeTaken() {

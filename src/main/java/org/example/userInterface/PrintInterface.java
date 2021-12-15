@@ -29,11 +29,10 @@ public class PrintInterface {
 
     public void printResults(int method, int amount){
         SortFactory sortFactory = new SortFactory(method, amount);
-        ArrayList sortedList = sortFactory.getSortedList();
         System.out.println("-----------------------------------------");
         System.out.println("METHOD NAME:    " + sortFactory.getMethodName());
         System.out.println("RANDOM LIST:    " + sortFactory.getRandomList());
-        System.out.println("SORTED LIST:    " + sortedList);
+        System.out.println("SORTED LIST:    " + sortFactory.getSortedList());
         System.out.println("TIME TAKEN:     " + sortFactory.getTimeTaken() + " nanoseconds");
         System.out.println("-----------------------------------------");
     }
