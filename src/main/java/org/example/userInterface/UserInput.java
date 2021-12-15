@@ -20,7 +20,7 @@ public class UserInput {
             }
             methodChosen = scanner.nextInt();
             //check if number between 1 and 6
-            if (methodChosen < 0 || methodChosen > 7) {
+            if (methodChosen < 1 || methodChosen > 6) {
                 System.err.print("ERROR INPUT ONLY 1 - 6:   ");
                 validInput = false;
             }
