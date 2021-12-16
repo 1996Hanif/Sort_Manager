@@ -74,4 +74,4 @@ Quicksort is a sorting algorithm based on the divide and conquer approach where
 
 ### Selection Sort
 Selection sort is a sorting algorithm that selects the smallest element from an unsorted list in each iteration and places that element at the beginning of the unsorted list.
-![selectionsortdemo](https://user-images.githubusercontent.com/15141836/146365047-1f03b1e7-54a4-41e6-9811-123296817858.gif | width=100)
+![selectionsortdemo](https://user-images.githubusercontent.com/15141836/146365047-1f03b1e7-54a4-41e6-9811-123296817858.gif = 250x250)
