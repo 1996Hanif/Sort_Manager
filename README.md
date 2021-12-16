@@ -16,6 +16,7 @@
         <li><a href="#selection-sort">Selection Sort</a></li>
       </ul>
     </li>
+    <li><a href="#references">References</a></li>
   </ol>
 </details>
 
@@ -78,3 +79,11 @@ Quicksort is a sorting algorithm based on the divide and conquer approach where
 Selection sort is a sorting algorithm that selects the smallest element from an unsorted list in each iteration and places that element at the beginning of the unsorted list.
 
 <img src="https://user-images.githubusercontent.com/15141836/146365047-1f03b1e7-54a4-41e6-9811-123296817858.gif " width="250">
+
+## References
+- https://en.wikipedia.org/wiki/Binary_search_tree
+- https://en.wikipedia.org/wiki/Bubble_sort
+- https://en.wikipedia.org/wiki/Merge_sort
+- https://en.wikipedia.org/wiki/Insertion_sort
+- https://www.programiz.com/dsa/quick-sort
+- https://www.programiz.com/dsa/selection-sort
