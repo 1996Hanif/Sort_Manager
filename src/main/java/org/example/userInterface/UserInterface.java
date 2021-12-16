@@ -6,6 +6,7 @@ import org.example.sortFactory.SortFactory;
 import java.util.ArrayList;
 
 public class UserInterface {
+    //manages what need to be output and input on the terminal
     public static void userInterface() {
         PrintInterface printInterface = new PrintInterface();
         UserInput userInput = new UserInput();

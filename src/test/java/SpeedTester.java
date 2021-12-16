@@ -9,13 +9,20 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.stream.Stream;
-
+/***
+ * These tests examine the speed of each sorter, the following variables can be modified in setUp:
+ * amountOfTestsToAverageOut: enter amount of test run per sorter
+ * sizeOfList: enter the size of list to be test
+ * showDetail: enter true to see all tests that are done
+ *             enter false to only see average time of all tests per sorter
+ */
 public class SpeedTester {
     private int amountOfTestsToAverageOut;
     private int sizeOfList;
     private boolean showDetail;
+
     @BeforeEach
-    void setup(){
+    void setUp(){
         amountOfTestsToAverageOut = 3;
         sizeOfList = 120;
         showDetail = true;

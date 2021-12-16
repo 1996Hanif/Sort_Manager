@@ -11,16 +11,18 @@ public class SortFactory {
     private ArrayList<Integer> randomList;
     private String methodName;
     private long timeTaken;
-
+    //sets the sorter to be used, and produces a random number list based on the method and amount given
     public SortFactory(int method, int amount) {
         this.method = method;
-        this.randomList = generateRandomList(amount);
+        this.randomList = RandomNumbersGenerator.RandomNumbersGenerator(amount);
     }
+    //sorts the random list and returns it back
     public ArrayList<Integer> getSortedList(){
         Sorter sorterPicked = getSorter(method);
         ArrayList<Integer> sortedList = new ArrayList<>();
         sortedList.addAll(randomList);
 
+        //used to time how long the sorter takes to sort the random list
         long startTime = System.nanoTime();
         sortedList = sorterPicked.sorter(sortedList);
         long endTime = System.nanoTime();
@@ -28,9 +30,7 @@ public class SortFactory {
 
         return sortedList;
     }
-    private ArrayList<Integer> generateRandomList(int amountOfValues){
-        return RandomNumbersGenerator.RandomNumbersGenerator(amountOfValues);
-    }
+    //number inputted initially by the user and returns the sorting method to be used
     private Sorter getSorter(int selectedSorterByUser){
         if (selectedSorterByUser == 1) return new BinaryTree();
         else if (selectedSorterByUser == 2) return new BubbleSort();
@@ -40,6 +40,7 @@ public class SortFactory {
         else if (selectedSorterByUser == 6) return new SelectionSort();
         else return null;
     }
+    //number inputted initially by the user and returns the name of the sorter to be used
     public String getMethodName() {
         if (method == 1) methodName = "Binary Tree";
         if (method == 2) methodName = "Bubble Sort";
@@ -49,9 +50,11 @@ public class SortFactory {
         if (method == 6) methodName = "Selection Sort";
         return methodName;
     }
+    //returns time taken to sort the random list
     public long getTimeTaken() {
         return timeTaken;
     }
+    //returns the initial random list
     public ArrayList<Integer> getRandomList() {
         return randomList;
     }

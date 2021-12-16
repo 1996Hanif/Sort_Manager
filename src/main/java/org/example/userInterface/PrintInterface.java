@@ -8,13 +8,12 @@ import java.util.Scanner;
 import java.util.logging.Logger;
 
 public class PrintInterface {
-    private Logger logger = Logger.getLogger("userInterface");
-    private Scanner scanner = new Scanner(System.in);
-
+    //prints out welcome message to terminal
     public void printWelcomeInterface() {
         System.out.println("-----------------------------------------");
         System.out.println("             SORT MANAGER");
     }
+    //prints out enter sorting type, with a selection to pick from
     public void printSortList(){
         System.out.println("-----------------------------------------");
         System.out.println("1. Binary Tree      2. Bubble Sort");
@@ -27,6 +26,7 @@ public class PrintInterface {
         System.out.print("PICK THE AMOUNT OF NUMBERS :   ");
     }
 
+    //prints out the results of the given inputs from the user
     public void printResults(int method, int amount){
         SortFactory sortFactory = new SortFactory(method, amount);
         System.out.println("-----------------------------------------");

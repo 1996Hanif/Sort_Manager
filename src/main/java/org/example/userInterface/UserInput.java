@@ -8,7 +8,7 @@ public class UserInput {
     public UserInput() {
         scanner = new Scanner(System.in);
     }
-
+    //validates the sort to be used, allowing user to only input number 1 to 6
     public int inputMethod(){
         boolean validInput = false;
         int methodChosen = -1;
@@ -30,6 +30,7 @@ public class UserInput {
         return methodChosen;
 
     }
+    //validates the amount of numbers the user wants, so that the user only inputs positive numbers
     public int inputAmountOfNumbers(){
         //check if integer is input
         while (!scanner.hasNextInt()) {
@@ -39,6 +40,7 @@ public class UserInput {
         int numberChosen = scanner.nextInt();
         return numberChosen;
     }
+    //checks if user inputs Y to restart the program
     public String inputRepeat(){
         String methodChosen = scanner.next();
         if (!methodChosen.equals("Y"))
