@@ -41,7 +41,6 @@ public class SpeedTester {
         averageTimeTaken(4);
     }
     @Test
-    @Disabled
     void testQuickSortTime(){
         System.out.println("QUICK SORT");
         averageTimeTaken(5);

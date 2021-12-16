@@ -61,7 +61,6 @@ public class SortTester {
             }
         }
         @Test
-        @Disabled
         void testQuickSort() {
             for (int i = 0; i < provenSortList.size(); i++) {
                 Sorter quickSort = new QuickSort();
