@@ -1,35 +1,18 @@
 package org.example.sortAlgorithms;
-
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class BubbleSort implements Sorter {
     @Override
     public ArrayList<Integer> sorter(ArrayList<Integer> listOfRandomNumbers) {
-
-        int temporaryHolder;
-
         for (int j = 0; j < listOfRandomNumbers.size() - 1; j++) {
+            //loops until biggest number is add the end of the list
             for (int i = 0; i < listOfRandomNumbers.size() - 1; i++) {
-                if (listOfRandomNumbers.get(i) > listOfRandomNumbers.get(i + 1)) {
-                    temporaryHolder = listOfRandomNumbers.get(i);
-                    listOfRandomNumbers.set(i, listOfRandomNumbers.get(i + 1));
-                    listOfRandomNumbers.set(i + 1, temporaryHolder);
-                }
+                //if number is bigger then the next number they will swap in the list
+                if (listOfRandomNumbers.get(i) > listOfRandomNumbers.get(i + 1))
+                    Collections.swap(listOfRandomNumbers, i ,i+1);
             }
         }
-
         return listOfRandomNumbers;
-    }
-
-    public static void main(String[] args) {
-        ArrayList<Integer> array = new ArrayList<>();
-        array.add(132);
-        array.add(34);
-        array.add(1312);
-        array.add(32);
-        array.add(1);
-
-        BubbleSort bubbleSort = new BubbleSort();
-        System.out.println(bubbleSort.sorter(array));
     }
 }

@@ -4,32 +4,24 @@ import java.util.ArrayList;
 
 public class InsertionSort implements Sorter {
 
-    public static void main(String[] args) {
-        InsertionSort insertionSort = new InsertionSort();
-        ArrayList<Integer> array = new ArrayList<>();
-        array.add(132);
-        array.add(34);
-        array.add(1312);
-        array.add(32);
-        array.add(1);
-        array.add(3);
-        array.add(569);
-        System.out.println(insertionSort.sorter(array));
-    }
     @Override
     public ArrayList<Integer> sorter(ArrayList<Integer> listOfRandomNumbers) {
-
+        //looks through each number in the list
         for (int i = 1; i < listOfRandomNumbers.size(); i++) {
             int valuesBefore = i ;
+            //if the number is less than the number before it in the list it will loop again
             while (listOfRandomNumbers.get(i) <= listOfRandomNumbers.get(valuesBefore) ){
-                if (valuesBefore - 1 == -1) {
+                //if there is no value less than value i, i will be placed at the start of the list
+                if (valuesBefore  == 0) {
                     listOfRandomNumbers.add(valuesBefore, listOfRandomNumbers.remove(i));
                     break;
                 }
+                //if i is bigger then a value before valuesBefore, i will be placed between the two values
                 else if (listOfRandomNumbers.get(i) > listOfRandomNumbers.get(valuesBefore - 1)) {
                     listOfRandomNumbers.add(valuesBefore, listOfRandomNumbers.remove(i));
                     break;
                 }
+                //this is used to iterate through all the values before i in the list that are greater then i
                 valuesBefore -= 1;
             }
         }

@@ -8,34 +8,13 @@ public class BinaryTree implements Sorter {
     private Node rootNode;
     public ArrayList<Integer> sortedList = new ArrayList<>();
 
-    public static void main(String[] args) {
-        BinaryTree binary = new BinaryTree();
-        ArrayList<Integer> array = new ArrayList<>();
-        array.add(132);
-        array.add(34);
-        array.add(1312);
-        array.add(32);
-        array.add(1);
-        array.add(3);
-        array.add(569);
-        array.add(3);
-        array.add(1);
-        array.add(3);
-        array.add(1);
-        array.add(3);
-        System.out.println(binary.sorter(array));
-        System.out.println(binary.sortedList);
-    }
     public ArrayList<Integer> sorter(ArrayList<Integer> listOfRandomNumbers) {
-
         //adds to Binary Tree
         addElements(listOfRandomNumbers);
         //returns the binary tree in a sorted list
         getAllNodesValues(rootNode);
-
         return sortedList;
     }
-
 
     //findAllNodes: find all nodes under the node given
     private void getAllNodesValues(Node node){
@@ -48,15 +27,12 @@ public class BinaryTree implements Sorter {
         if  (!node.isRightChildEmpty())
             getAllNodesValues(node.getRightChild());
     }
-
-
     //addElements: adding an array of nodes to the tree
     private void addElements(ArrayList<Integer> elements) {
         rootNode = new Node(elements.get(0));
         for (int i = 1; i < elements.size(); i++)
             addNodeToTree(rootNode, elements.get(i));
     }
-
     //addNodeToTree: placing the node within the tree
     private void addNodeToTree(Node node, int element){
         if (element <= node.getValue()){

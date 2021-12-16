@@ -4,18 +4,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class SelectionSort implements Sorter {
-    public static void main(String[] args) {
-        SelectionSort selectionSort = new SelectionSort();
-        ArrayList<Integer> array = new ArrayList<>();
-        array.add(132);
-        array.add(34);
-        array.add(1312);
-        array.add(32);
-        array.add(1);
-        array.add(3);
-        array.add(569);
-        System.out.println(selectionSort.sorter(array));
-    }
     @Override
     public ArrayList<Integer> sorter(ArrayList<Integer> listOfRandomNumbers) {
         int smallestValue;

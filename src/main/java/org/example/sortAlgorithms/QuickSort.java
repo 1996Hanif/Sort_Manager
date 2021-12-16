@@ -1,28 +1,10 @@
 package org.example.sortAlgorithms;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Collections;
 
 public class QuickSort implements Sorter {
 
-
-    public static void main(String[] args) {
-        ArrayList<Integer> array = new ArrayList<>();
-        array.add(132);
-        array.add(34);
-        array.add(1312);
-        array.add(3432);
-        array.add(22);
-        array.add(334);
-        array.add(34);
-        array.add(1312);
-        array.add(32);
-        array.add(1);
-
-        QuickSort quickSort = new QuickSort();
-        System.out.println(quickSort.sorter(array));
-    }
     @Override
     public ArrayList<Integer> sorter(ArrayList<Integer> listOfRandomNumbers) {
         return quickSort(listOfRandomNumbers, 0, listOfRandomNumbers.size());
