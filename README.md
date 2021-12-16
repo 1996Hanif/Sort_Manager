@@ -51,6 +51,7 @@ A binary tree is a rooted binary tree data structure whose internal nodes each s
 
 ### Bubble Sort
 Bubble sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted. The algorithm, which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list.
+
 ![Bubble-sort-example-300px](https://user-images.githubusercontent.com/15141836/146362904-ec3d839c-6734-4579-81db-aa46edb6e090.gif)
 
 ### Insertion Sort
@@ -73,4 +74,4 @@ Quicksort is a sorting algorithm based on the divide and conquer approach where
 
 ### Selection Sort
 Selection sort is a sorting algorithm that selects the smallest element from an unsorted list in each iteration and places that element at the beginning of the unsorted list.
-![selectionsortdemo](https://user-images.githubusercontent.com/15141836/146365047-1f03b1e7-54a4-41e6-9811-123296817858.gif)
+![selectionsortdemo](https://user-images.githubusercontent.com/15141836/146365047-1f03b1e7-54a4-41e6-9811-123296817858.gif | width=100))
