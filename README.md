@@ -48,8 +48,8 @@ The purpose of this program is to sort a number of random numbers given by the u
 ### Binary Tree
 
 A binary tree is a rooted binary tree data structure whose internal nodes each store a key greater than all the keys in the node’s left subtree and less than those in its right subtree. A binary tree is a type of data structure for storing data such as numbers in an organized way.
-![360px-Binary_search_tree svg](https://user-images.githubusercontent.com/15141836/146362515-c9443794-c375-484e-9c37-89db8fce755a.png)
 
+![360px-Binary_search_tree svg](https://user-images.githubusercontent.com/15141836/146362515-c9443794-c375-484e-9c37-89db8fce755a.png)
 ### Bubble Sort
 Bubble sort is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted. The algorithm, which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list.
 
@@ -57,6 +57,7 @@ Bubble sort is a simple sorting algorithm that repeatedly steps through the list
 
 ### Insertion Sort
 Insertion sort iterates, consuming one input element each repetition, and grows a sorted output list. At each iteration, insertion sort removes one element from the input data, finds the location it belongs within the sorted list, and inserts it there. It repeats until no input elements remain.
+
 ![Insertion-sort-example-300px](https://user-images.githubusercontent.com/15141836/146363550-87dcbb5a-2953-426e-887a-d5964b55f57b.gif)
 
 ### Merge Sort
