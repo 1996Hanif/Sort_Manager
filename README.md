@@ -25,6 +25,8 @@
 
 The purpose of this program is to sort a number of random numbers given by the user. The program consists of 6 different sorting algorithm, each have their own special way to sorting a list of numbers. The user is allowed to pick the amount of numbers he/she wants sorted and choose which sorting algorithm he/she wants to sort it with, the program will then return a list of random numbers based on the amount given by the user, a sorted version the same list, the sorting algorithm used and the time taken to do the sorting
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## How To Use 
 
 ### Installation
@@ -42,6 +44,8 @@ The purpose of this program is to sort a number of random numbers given by the u
 3. You will then be asked to enter the amount of numbers you want to be sorted, enter any number above 0 followed by ENTER
 4. Now you should recieve the sort method chose, a list of numbers, a sort list of number done by the chosen sort method and the time taken by the sort algorithm
 5. In order to repeat the program enter Y followed by ENTER, to stop the program press Enter
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Sorting Algorithms Used
 
@@ -81,6 +85,8 @@ Selection sort is a sorting algorithm that selects the smallest element from an 
 
 <img src="https://user-images.githubusercontent.com/15141836/146365047-1f03b1e7-54a4-41e6-9811-123296817858.gif " width="250">
 
+<p align="right">(<a href="#top">back to top</a>)</p>
+
 ## References
 - https://en.wikipedia.org/wiki/Binary_search_tree
 - https://en.wikipedia.org/wiki/Bubble_sort
@@ -88,3 +94,5 @@ Selection sort is a sorting algorithm that selects the smallest element from an 
 - https://en.wikipedia.org/wiki/Insertion_sort
 - https://www.programiz.com/dsa/quick-sort
 - https://www.programiz.com/dsa/selection-sort
+
+<p align="right">(<a href="#top">back to top</a>)</p>
