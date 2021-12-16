@@ -62,6 +62,7 @@ Insertion sort iterates, consuming one input element each repetition, and grows 
 Conceptually, a merge sort works as follows:
 1. Divide the unsorted list into n sublists, each containing one element (a list of one element is considered sorted).
 2. Repeatedly merge sublists to produce new sorted sublists until there is only one sublist remaining. This will be the sorted list.
+
 ![Merge-sort-example-300px](https://user-images.githubusercontent.com/15141836/146363814-6738bbab-3561-42b8-8680-2fcfb3f61c48.gif)
 
 ### Quick Sort
@@ -70,8 +71,10 @@ Quicksort is a sorting algorithm based on the divide and conquer approach where
 2. While dividing the array, the pivot element should be positioned in such a way that elements less than pivot are kept on the left side and elements greater than pivot are on the right side of the pivot.
 3. The left and right subarrays are also divided using the same approach. This process continues until each subarray contains a single element.
 4. At this point, elements are already sorted. Finally, elements are combined to form a sorted array.
+
 ![Quicksort-example](https://user-images.githubusercontent.com/15141836/146364671-e0596e48-3647-4b92-a1f3-6e33f2c98432.gif)
 
 ### Selection Sort
 Selection sort is a sorting algorithm that selects the smallest element from an unsorted list in each iteration and places that element at the beginning of the unsorted list.
+
 <img src="https://user-images.githubusercontent.com/15141836/146365047-1f03b1e7-54a4-41e6-9811-123296817858.gif " width="250">
