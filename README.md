@@ -28,10 +28,16 @@ The purpose of this program is to sort a number of random numbers given by the u
 
 ### Installation
 
-1. Go to this like https://github.com/1996Hanif/Sort_Manager.
-2. On the top of the page, click the green drop-down list called Code.
-3. Clone the repository by copying the HTTPS link provided
-4. Open Git Bash
-5. Change your current working directory to the location where you want the cloned directory to be placed.
-6. In Git Bash type git clone followed by the URL you copied earlier.
-7. Now press Enter and you should have created a local clone.
+1. Copy this link https://github.com/1996Hanif/Sort_Manager.
+2. Open Git Bash
+3. Change your current working directory to the location where you want the cloned directory to be placed.
+4. In Git Bash type git clone followed by the URL you copied earlier.
+5. Now press Enter and you should have created a local clone.
+
+### How to Use Program
+
+1. Run The Program
+2. You will be asked to choose the sorting method to want to use, enter the number correlating with the sort method (1-6) followed by ENTER
+3. You will then be asked to enter the amount of numbers you want to be sorted, enter any number above 0 followed by ENTER
+4. Now you should recieve the sort method chose, a list of numbers, a sort list of number done by the chosen sort method and the time taken by the sort algorithm
+5. In order to repeat the program enter Y followed by ENTER, to stop the program press Enter
