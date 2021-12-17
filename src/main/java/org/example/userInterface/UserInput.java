@@ -32,19 +32,29 @@ public class UserInput {
     }
     //validates the amount of numbers the user wants, so that the user only inputs positive numbers
     public int inputAmountOfNumbers(){
-        //check if integer is input
-        while (!scanner.hasNextInt()) {
-            scanner.next();
-            System.err.print("ERROR NOT AN INTEGER:     ");
+        boolean validInput = false;
+        int numberChosen = -1;
+        while(validInput == false) {
+            //check if integer is input
+            while (!scanner.hasNextInt()) {
+                scanner.next();
+                System.err.print("ERROR NOT AN INTEGER:     ");
+            }
+            numberChosen = scanner.nextInt();
+
+            if (numberChosen == 0) {
+                System.err.print("ERROR CANNOT INPUT 0:   ");
+                validInput = false;
+            } else
+                validInput = true;
         }
-        int numberChosen = scanner.nextInt();
         return numberChosen;
     }
     //checks if user inputs Y to restart the program
     public String inputRepeat(){
         String methodChosen = scanner.next();
         if (!methodChosen.equals("Y"))
-            System.out.println("Goodbye");
+            System.out.println("THANKS FOR USING SORT MANAGER");
 
         return methodChosen;
     }
