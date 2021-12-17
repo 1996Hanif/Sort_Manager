@@ -48,6 +48,7 @@ The purpose of this program is to sort a number of random numbers given by the u
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## Sorting Algorithms Used
+In total the program consists of 6 different sorting methods, below is a short description on the 6 sorting methods I used.
 
 ### Binary Tree
 
